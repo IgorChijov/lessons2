@@ -35,7 +35,7 @@ public class Main {
             total = total + moneyEveryMonth;
             total = total + total / 100;
             month++;
-            System.out.println("Месяц " + month + " сумма накоплений равна " + total + " рублей");
+            System.out.println("Месяц " + month + " сумма накоплений - " + total + " рублей");
         }
 
         int two = 2;
