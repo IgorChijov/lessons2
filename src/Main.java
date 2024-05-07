@@ -30,12 +30,9 @@ public class Main {
 
         int moneyEveryMonth = 29000;
         int total = 0;
-        int month = 0;
-        for (float i = 0; i < 12; i++){
-            total = total + moneyEveryMonth;
-            total = total + total / 100;
-            month++;
-            System.out.println("Месяц " + month + " сумма накоплений - " + total + " рублей");
+        for (int i = 1; i <= 12; i++){
+            total = total + (int) (total * 0.01) + moneyEveryMonth;
+            System.out.println("Месяц " + i + " сумма накоплений - " + total + " рублей");
         }
 
         int two = 2;
