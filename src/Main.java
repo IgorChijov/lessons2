@@ -42,7 +42,7 @@ public class Main {
             int month = 1;
             while (dep < 12_000_000) {
                 dep = dep + (int) (dep * 0.07);
-                System.out.println("Месяц " + month + " ,сумма накоплений равна " + dep);
+                System.out.println("Месяц " + month + " , сумма накоплений равна " + dep);
                 month++;
             }
             System.out.println();
