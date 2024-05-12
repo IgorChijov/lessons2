@@ -1,44 +1,95 @@
 public class Main {
     public static void main(String[] args) {
-        for (int i = 1; i < 11; i++){
-            System.out.println(i);
+        {
+            int total = 0;
+            int month = 0;
+            while (total < 2_459_000) {
+                total += 15_000;
+                month++;
+            }
+            System.out.println("Месяц " + month + " сумма накоплений равна " + total + " рублей");
+            System.out.println();
         }
 
-        for (int i = 10; i > 0; i--){
-            System.out.println(i);
+        {
+            int number = 0;
+            while (number < 10) {
+                number++;
+                System.out.print(number + " ");
+
+            }
+            System.out.println();
+            for (; number > 0; number--) {
+                System.out.print(number + " ");
+            }
+            System.out.println();
         }
 
-        for (int i = 0; i < 17; i = i + 2){
-            System.out.println(i);
+        {
+            System.out.println();
+            int population = 12_000_000;
+            int deathRate = 8;
+            int birthRate = 17;
+            for (int i = 1; i <= 10; i++) {
+                population = population + (birthRate - deathRate) * population / 1000;
+                System.out.println("Год " + i + " численность составляет " + population + " человек");
+            }
+            System.out.println();
         }
 
-        for (int i = 10; i > -11; i--){
-            System.out.println(i);
+        {
+            int dep = 15_000;
+            int month = 1;
+            while (dep < 12_000_000) {
+                dep = dep + (int) (dep * 0.07);
+                System.out.println("Месяц " + month + " , сумма накоплений равна " + dep);
+                month++;
+            }
+            System.out.println();
         }
 
-        for (int i = 1904; i < 2096; i = i + 4){
-            System.out.println(i + " год является високосным");
+        {
+            int dep = 15_000;
+            int month = 1;
+            while (dep < 12_000_000) {
+                dep = dep + (int) (dep * 0.07);
+                if (month % 6 == 0) {
+                    System.out.println("Месяц " + month + " ,сумма накоплений равна " + dep);
+                }
+                month++;
+            }
+            System.out.println();
         }
 
-        for (int i = 7; i < 99; i = i + 7){
-            System.out.println(i);
+        {
+            int dep = 15_000;
+            var period = 9 * 12;
+            for (int month = 1; month < period; month++) {
+                dep = dep + (int) (dep * 0.07);
+                if (month % 6 == 0) {
+                    System.out.println("Месяц " + month + " ,сумма накоплений равна " + dep);
+                }
+            }
+            System.out.println();
         }
 
-        for (int i = 1; i < 513; i = i * 2){
-            System.out.println(i);
+        {
+            for (int day = 2; day < 31; day += 7) {
+                System.out.println("Сегодня пятница " + day + " -e число, необходимо подготовить отчет");
+            }
+            System.out.println();
         }
 
-        int moneyEveryMonth = 29000;
-        int total = 0;
-        for (int i = 1; i <= 12; i++){
-            total = total + (int) (total * 0.01) + moneyEveryMonth;
-            System.out.println("Месяц " + i + " сумма накоплений - " + total + " рублей");
+        {
+            for (int year = 2024 - 200; year < 2024 + 100; year++) {
+                if (year % 79 == 0) {
+                    System.out.println(year);
+                }
+            }
         }
 
-        int two = 2;
-        for (int i = 1;i < 11; i++){
-            System.out.println(" 2 * " + i + " = " + two * i );
-        }
 
     }
 }
+
+
